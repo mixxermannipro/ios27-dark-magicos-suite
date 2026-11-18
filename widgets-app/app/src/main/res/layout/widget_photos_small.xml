@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ios_widget">
+
+    <ImageView
+        android:id="@+id/photos_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/photos_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#AA000000"
+        android:shadowDy="1"
+        android:shadowRadius="4"
+        android:text="Ausgewählte Fotos"
+        android:textColor="#E5FFFFFF"
+        android:textSize="11sp" />
+</FrameLayout>

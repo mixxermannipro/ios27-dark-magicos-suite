@@ -1,0 +1,845 @@
+{
+  "theme": {
+    "name": "iOS 27 Dark",
+    "version": "1.0.0",
+    "author": "iOS 27 Dark Suite"
+  },
+  "apps": [
+    {
+      "package": "com.hihonor.camera",
+      "aliases": ["com.huawei.camera", "com.android.camera"],
+      "name": "Kamera",
+      "category": "system_honor",
+      "icon": "camera"
+    },
+    {
+      "package": "com.hihonor.photos",
+      "aliases": ["com.huawei.photos", "com.android.gallery3d"],
+      "name": "Fotos & Galerie",
+      "category": "system_honor",
+      "icon": "photos"
+    },
+    {
+      "package": "com.hihonor.contacts",
+      "aliases": ["com.android.contacts", "com.huawei.contacts"],
+      "name": "Kontakte",
+      "category": "system_honor",
+      "icon": "contacts"
+    },
+    {
+      "package": "com.hihonor.phone",
+      "aliases": ["com.android.dialer", "com.android.incallui", "com.huawei.phone"],
+      "name": "Telefon",
+      "category": "system_honor",
+      "icon": "phone"
+    },
+    {
+      "package": "com.hihonor.mms",
+      "aliases": ["com.android.mms", "com.google.android.apps.messaging"],
+      "name": "Nachrichten",
+      "category": "system_honor",
+      "icon": "messages"
+    },
+    {
+      "package": "com.hihonor.deskclock",
+      "aliases": ["com.android.deskclock", "com.google.android.deskclock"],
+      "name": "Uhr",
+      "category": "system_honor",
+      "icon": "clock"
+    },
+    {
+      "package": "com.hihonor.calculator",
+      "aliases": ["com.android.calculator2", "com.google.android.calculator"],
+      "name": "Rechner",
+      "category": "system_honor",
+      "icon": "calculator"
+    },
+    {
+      "package": "com.hihonor.filemanager",
+      "aliases": ["com.huawei.hidisk", "com.android.documentsui", "com.google.android.apps.nbu.files"],
+      "name": "Dateien",
+      "category": "system_honor",
+      "icon": "files"
+    },
+    {
+      "package": "com.hihonor.appmarket",
+      "aliases": ["com.huawei.appmarket"],
+      "name": "Honor App Market",
+      "category": "system_honor",
+      "icon": "appmarket"
+    },
+    {
+      "package": "com.hihonor.settings",
+      "aliases": ["com.android.settings"],
+      "name": "Einstellungen",
+      "category": "system_honor",
+      "icon": "settings"
+    },
+    {
+      "package": "com.hihonor.calendar",
+      "aliases": ["com.android.calendar"],
+      "name": "Kalender",
+      "category": "system_honor",
+      "icon": "calendar"
+    },
+    {
+      "package": "com.hihonor.notepad",
+      "aliases": ["com.huawei.notepad"],
+      "name": "Notizen",
+      "category": "system_honor",
+      "icon": "notes"
+    },
+    {
+      "package": "com.hihonor.health",
+      "aliases": ["com.huawei.health"],
+      "name": "Honor Health",
+      "category": "system_honor",
+      "icon": "health"
+    },
+    {
+      "package": "com.huawei.hwid",
+      "aliases": ["com.hihonor.id"],
+      "name": "Honor / Huawei ID",
+      "category": "system_honor",
+      "icon": "id_shield"
+    },
+    {
+      "package": "com.android.browser",
+      "aliases": ["com.hihonor.browser", "com.huawei.browser"],
+      "name": "Browser",
+      "category": "system_honor",
+      "icon": "safari_compass"
+    },
+    {
+      "package": "com.hihonor.email",
+      "aliases": ["com.android.email"],
+      "name": "E-Mail",
+      "category": "system_honor",
+      "icon": "mail"
+    },
+    {
+      "package": "com.hihonor.music",
+      "aliases": ["com.huawei.music"],
+      "name": "Honor Musik",
+      "category": "system_honor",
+      "icon": "music"
+    },
+    {
+      "package": "com.hihonor.video",
+      "aliases": ["com.huawei.himovie"],
+      "name": "Honor Video",
+      "category": "system_honor",
+      "icon": "video_player"
+    },
+    {
+      "package": "com.hihonor.weather",
+      "aliases": ["com.huawei.android.totemweather"],
+      "name": "Wetter",
+      "category": "system_honor",
+      "icon": "weather"
+    },
+    {
+      "package": "com.hihonor.compass",
+      "aliases": ["com.huawei.compass"],
+      "name": "Kompass",
+      "category": "system_honor",
+      "icon": "compass"
+    },
+    {
+      "package": "com.hihonor.soundrecorder",
+      "aliases": ["com.android.soundrecorder"],
+      "name": "Rekorder",
+      "category": "system_honor",
+      "icon": "voice_memo"
+    },
+    {
+      "package": "com.hihonor.wallet",
+      "aliases": ["com.huawei.wallet"],
+      "name": "Honor Wallet",
+      "category": "system_honor",
+      "icon": "wallet"
+    },
+    {
+      "package": "com.hihonor.android.thememanager",
+      "aliases": ["com.huawei.android.thememanager"],
+      "name": "Designs",
+      "category": "system_honor",
+      "icon": "themes"
+    },
+    {
+      "package": "com.hihonor.systemmanager",
+      "aliases": ["com.huawei.systemmanager"],
+      "name": "Systemmanager",
+      "category": "system_honor",
+      "icon": "shield_boost"
+    },
+    {
+      "package": "com.hihonor.tips",
+      "name": "Tipps",
+      "category": "system_honor",
+      "icon": "tips"
+    },
+    {
+      "package": "com.hihonor.search",
+      "name": "Honor Suche",
+      "category": "system_honor",
+      "icon": "search"
+    },
+    {
+      "package": "com.android.vending",
+      "name": "Google Play Store",
+      "category": "system_honor",
+      "icon": "play_store"
+    },
+    {
+      "package": "com.whatsapp",
+      "name": "WhatsApp",
+      "category": "international_de",
+      "icon": "whatsapp"
+    },
+    {
+      "package": "com.whatsapp.w4b",
+      "name": "WhatsApp Business",
+      "category": "international_de",
+      "icon": "whatsapp_business"
+    },
+    {
+      "package": "org.telegram.messenger",
+      "aliases": ["org.telegram.plus"],
+      "name": "Telegram",
+      "category": "international_de",
+      "icon": "telegram"
+    },
+    {
+      "package": "org.thoughtcrime.securesms",
+      "name": "Signal",
+      "category": "international_de",
+      "icon": "signal"
+    },
+    {
+      "package": "com.instagram.android",
+      "name": "Instagram",
+      "category": "international_de",
+      "icon": "instagram"
+    },
+    {
+      "package": "com.zhiliaoapp.musically",
+      "name": "TikTok",
+      "category": "international_de",
+      "icon": "tiktok"
+    },
+    {
+      "package": "com.twitter.android",
+      "name": "X",
+      "category": "international_de",
+      "icon": "x_twitter"
+    },
+    {
+      "package": "com.google.android.youtube",
+      "name": "YouTube",
+      "category": "international_de",
+      "icon": "youtube"
+    },
+    {
+      "package": "com.google.android.apps.youtube.music",
+      "name": "YouTube Music",
+      "category": "international_de",
+      "icon": "youtube_music"
+    },
+    {
+      "package": "com.spotify.music",
+      "name": "Spotify",
+      "category": "international_de",
+      "icon": "spotify"
+    },
+    {
+      "package": "com.android.chrome",
+      "name": "Chrome",
+      "category": "international_de",
+      "icon": "chrome"
+    },
+    {
+      "package": "com.google.android.gm",
+      "name": "Gmail",
+      "category": "international_de",
+      "icon": "gmail"
+    },
+    {
+      "package": "com.google.android.apps.maps",
+      "name": "Google Maps",
+      "category": "international_de",
+      "icon": "google_maps"
+    },
+    {
+      "package": "de.traderepublic.app",
+      "name": "Trade Republic",
+      "category": "international_de",
+      "icon": "trade_republic"
+    },
+    {
+      "package": "com.paypal.android.p2pmobile",
+      "name": "PayPal",
+      "category": "international_de",
+      "icon": "paypal"
+    },
+    {
+      "package": "com.starfinanz.smob.android.sfinanzstatus",
+      "name": "Sparkasse",
+      "category": "international_de",
+      "icon": "sparkasse"
+    },
+    {
+      "package": "de.number26.android",
+      "name": "N26",
+      "category": "international_de",
+      "icon": "n26"
+    },
+    {
+      "package": "com.amazon.mShop.android.shopping",
+      "aliases": ["de.amazon.mShop.android.shopping"],
+      "name": "Amazon",
+      "category": "international_de",
+      "icon": "amazon"
+    },
+    {
+      "package": "com.netflix.mediaclient",
+      "name": "Netflix",
+      "category": "international_de",
+      "icon": "netflix"
+    },
+    {
+      "package": "com.openai.chatgpt",
+      "name": "ChatGPT",
+      "category": "international_de",
+      "icon": "chatgpt"
+    },
+    {
+      "package": "com.discord",
+      "name": "Discord",
+      "category": "international_de",
+      "icon": "discord"
+    },
+    {
+      "package": "com.reddit.frontpage",
+      "name": "Reddit",
+      "category": "international_de",
+      "icon": "reddit"
+    },
+    {
+      "package": "com.github.android",
+      "name": "GitHub",
+      "category": "international_de",
+      "icon": "github"
+    },
+    {
+      "package": "com.google.android.googlequicksearchbox",
+      "name": "Google",
+      "category": "international_de",
+      "icon": "google_g"
+    },
+    {
+      "package": "com.google.android.apps.photos",
+      "name": "Google Fotos",
+      "category": "international_de",
+      "icon": "google_photos"
+    },
+    {
+      "package": "com.google.android.apps.docs",
+      "name": "Google Drive",
+      "category": "international_de",
+      "icon": "google_drive"
+    },
+    {
+      "package": "com.google.android.calendar",
+      "name": "Google Kalender",
+      "category": "international_de",
+      "icon": "google_calendar"
+    },
+    {
+      "package": "com.google.android.apps.translate",
+      "name": "Google Übersetzer",
+      "category": "international_de",
+      "icon": "translate"
+    },
+    {
+      "package": "com.google.android.keep",
+      "name": "Google Notizen",
+      "category": "international_de",
+      "icon": "keep"
+    },
+    {
+      "package": "com.google.android.apps.authenticator2",
+      "name": "Authenticator",
+      "category": "international_de",
+      "icon": "authenticator"
+    },
+    {
+      "package": "com.google.android.apps.meetings",
+      "name": "Google Meet",
+      "category": "international_de",
+      "icon": "meet"
+    },
+    {
+      "package": "com.apple.android.music",
+      "name": "Apple Music",
+      "category": "international_de",
+      "icon": "apple_music"
+    },
+    {
+      "package": "com.shazam.android",
+      "name": "Shazam",
+      "category": "international_de",
+      "icon": "shazam"
+    },
+    {
+      "package": "com.soundcloud.android",
+      "name": "SoundCloud",
+      "category": "international_de",
+      "icon": "soundcloud"
+    },
+    {
+      "package": "org.videolan.vlc",
+      "name": "VLC",
+      "category": "international_de",
+      "icon": "vlc"
+    },
+    {
+      "package": "tv.twitch.android.app",
+      "name": "Twitch",
+      "category": "international_de",
+      "icon": "twitch"
+    },
+    {
+      "package": "com.snapchat.android",
+      "name": "Snapchat",
+      "category": "international_de",
+      "icon": "snapchat"
+    },
+    {
+      "package": "com.facebook.katana",
+      "name": "Facebook",
+      "category": "international_de",
+      "icon": "facebook"
+    },
+    {
+      "package": "com.facebook.orca",
+      "name": "Messenger",
+      "category": "international_de",
+      "icon": "fb_messenger"
+    },
+    {
+      "package": "com.linkedin.android",
+      "name": "LinkedIn",
+      "category": "international_de",
+      "icon": "linkedin"
+    },
+    {
+      "package": "com.pinterest",
+      "name": "Pinterest",
+      "category": "international_de",
+      "icon": "pinterest"
+    },
+    {
+      "package": "com.instagram.barcelona",
+      "name": "Threads",
+      "category": "international_de",
+      "icon": "threads"
+    },
+    {
+      "package": "xyz.blueskyweb.app",
+      "name": "Bluesky",
+      "category": "international_de",
+      "icon": "bluesky"
+    },
+    {
+      "package": "com.anthropic.claude",
+      "name": "Claude",
+      "category": "international_de",
+      "icon": "claude"
+    },
+    {
+      "package": "com.google.android.apps.bard",
+      "name": "Gemini",
+      "category": "international_de",
+      "icon": "gemini"
+    },
+    {
+      "package": "ai.perplexity.app.android",
+      "name": "Perplexity",
+      "category": "international_de",
+      "icon": "perplexity"
+    },
+    {
+      "package": "com.deepl.mobiletranslator",
+      "name": "DeepL",
+      "category": "international_de",
+      "icon": "deepl"
+    },
+    {
+      "package": "ch.protonmail.android",
+      "name": "Proton Mail",
+      "category": "international_de",
+      "icon": "protonmail"
+    },
+    {
+      "package": "ch.protonvpn.android",
+      "name": "Proton VPN",
+      "category": "international_de",
+      "icon": "protonvpn"
+    },
+    {
+      "package": "com.x8bit.bitwarden",
+      "name": "Bitwarden",
+      "category": "international_de",
+      "icon": "bitwarden"
+    },
+    {
+      "package": "com.onepassword.android",
+      "name": "1Password",
+      "category": "international_de",
+      "icon": "onepassword"
+    },
+    {
+      "package": "com.microsoft.teams",
+      "name": "Microsoft Teams",
+      "category": "international_de",
+      "icon": "ms_teams"
+    },
+    {
+      "package": "com.microsoft.office.outlook",
+      "name": "Outlook",
+      "category": "international_de",
+      "icon": "outlook"
+    },
+    {
+      "package": "com.microsoft.skydrive",
+      "name": "OneDrive",
+      "category": "international_de",
+      "icon": "onedrive"
+    },
+    {
+      "package": "notion.id",
+      "name": "Notion",
+      "category": "international_de",
+      "icon": "notion"
+    },
+    {
+      "package": "md.obsidian",
+      "name": "Obsidian",
+      "category": "international_de",
+      "icon": "obsidian"
+    },
+    {
+      "package": "com.todoist",
+      "name": "Todoist",
+      "category": "international_de",
+      "icon": "todoist"
+    },
+    {
+      "package": "com.Slack",
+      "name": "Slack",
+      "category": "international_de",
+      "icon": "slack"
+    },
+    {
+      "package": "us.zoom.videomeetings",
+      "name": "Zoom",
+      "category": "international_de",
+      "icon": "zoom"
+    },
+    {
+      "package": "com.duolingo",
+      "name": "Duolingo",
+      "category": "international_de",
+      "icon": "duolingo"
+    },
+    {
+      "package": "com.amazon.kindle",
+      "name": "Kindle",
+      "category": "international_de",
+      "icon": "kindle"
+    },
+    {
+      "package": "com.audible.application",
+      "name": "Audible",
+      "category": "international_de",
+      "icon": "audible"
+    },
+    {
+      "package": "com.disney.disneyplus",
+      "name": "Disney+",
+      "category": "international_de",
+      "icon": "disney_plus"
+    },
+    {
+      "package": "com.amazon.avod.thirdpartyclient",
+      "name": "Prime Video",
+      "category": "international_de",
+      "icon": "prime_video"
+    },
+    {
+      "package": "com.valvesoftware.android.steam.community",
+      "name": "Steam",
+      "category": "international_de",
+      "icon": "steam"
+    },
+    {
+      "package": "com.scee.psxandroid",
+      "name": "PlayStation App",
+      "category": "international_de",
+      "icon": "playstation"
+    },
+    {
+      "package": "com.microsoft.xboxone.smartglass",
+      "name": "Xbox",
+      "category": "international_de",
+      "icon": "xbox"
+    },
+    {
+      "package": "com.ubercab",
+      "name": "Uber",
+      "category": "international_de",
+      "icon": "uber"
+    },
+    {
+      "package": "com.airbnb.android",
+      "name": "Airbnb",
+      "category": "international_de",
+      "icon": "airbnb"
+    },
+    {
+      "package": "com.booking",
+      "name": "Booking.com",
+      "category": "international_de",
+      "icon": "booking"
+    },
+    {
+      "package": "de.hafas.android.db",
+      "name": "DB Navigator",
+      "category": "international_de",
+      "icon": "db_navigator"
+    },
+    {
+      "package": "de.dhl.paket",
+      "name": "Post & DHL",
+      "category": "international_de",
+      "icon": "dhl"
+    },
+    {
+      "package": "com.ebay.kleinanzeigen",
+      "name": "Kleinanzeigen",
+      "category": "international_de",
+      "icon": "kleinanzeigen"
+    },
+    {
+      "package": "com.yopeso.lieferando",
+      "name": "Lieferando",
+      "category": "international_de",
+      "icon": "lieferando"
+    },
+    {
+      "package": "com.revolut.revolut",
+      "name": "Revolut",
+      "category": "international_de",
+      "icon": "revolut"
+    },
+    {
+      "package": "com.transferwise.android",
+      "name": "Wise",
+      "category": "international_de",
+      "icon": "wise"
+    },
+    {
+      "package": "com.ing.diba.mbbr2",
+      "name": "ING Banking",
+      "category": "international_de",
+      "icon": "ing"
+    },
+    {
+      "package": "com.dkbcodefactory.banking",
+      "name": "DKB",
+      "category": "international_de",
+      "icon": "dkb"
+    },
+    {
+      "package": "com.myklarnamobile",
+      "name": "Klarna",
+      "category": "international_de",
+      "icon": "klarna"
+    },
+    {
+      "package": "de.komoot.android",
+      "name": "komoot",
+      "category": "international_de",
+      "icon": "komoot"
+    },
+    {
+      "package": "com.strava",
+      "name": "Strava",
+      "category": "international_de",
+      "icon": "strava"
+    },
+    {
+      "package": "com.garmin.android.apps.connectmobile",
+      "name": "Garmin Connect",
+      "category": "international_de",
+      "icon": "garmin"
+    },
+    {
+      "package": "org.mozilla.firefox",
+      "name": "Firefox",
+      "category": "international_de",
+      "icon": "firefox"
+    },
+    {
+      "package": "com.brave.browser",
+      "name": "Brave",
+      "category": "international_de",
+      "icon": "brave"
+    },
+    {
+      "package": "com.duckduckgo.mobile.android",
+      "name": "DuckDuckGo",
+      "category": "international_de",
+      "icon": "duckduckgo"
+    },
+    {
+      "package": "com.termux",
+      "name": "Termux",
+      "category": "international_de",
+      "icon": "termux"
+    },
+    {
+      "package": "io.homeassistant.companion.android",
+      "name": "Home Assistant",
+      "category": "international_de",
+      "icon": "home_assistant"
+    },
+    {
+      "package": "com.tencent.mm",
+      "name": "WeChat",
+      "category": "china",
+      "icon": "wechat"
+    },
+    {
+      "package": "com.eg.android.AlipayGphone",
+      "name": "Alipay",
+      "category": "china",
+      "icon": "alipay"
+    },
+    {
+      "package": "com.sina.weibo",
+      "name": "Weibo",
+      "category": "china",
+      "icon": "weibo"
+    },
+    {
+      "package": "com.ss.android.ugc.aweme",
+      "name": "Douyin",
+      "category": "china",
+      "icon": "tiktok"
+    },
+    {
+      "package": "com.taobao.taobao",
+      "name": "Taobao",
+      "category": "china",
+      "icon": "taobao"
+    },
+    {
+      "package": "com.baidu.BaiduMap",
+      "name": "Baidu Maps",
+      "category": "china",
+      "icon": "baidu_maps"
+    },
+    {
+      "package": "com.xingin.xhs",
+      "name": "Xiaohongshu",
+      "category": "china",
+      "icon": "xiaohongshu"
+    },
+    {
+      "package": "tv.danmaku.bili",
+      "name": "Bilibili",
+      "category": "china",
+      "icon": "bilibili"
+    },
+    {
+      "package": "com.tencent.mobileqq",
+      "name": "QQ",
+      "category": "china",
+      "icon": "qq"
+    },
+    {
+      "package": "com.jingdong.app.mall",
+      "name": "JD.com",
+      "category": "china",
+      "icon": "jd"
+    },
+    {
+      "package": "com.sankuai.meituan",
+      "name": "Meituan",
+      "category": "china",
+      "icon": "meituan"
+    },
+    {
+      "package": "com.sdu.didi.psnger",
+      "name": "DiDi",
+      "category": "china",
+      "icon": "didi"
+    },
+    {
+      "package": "com.autonavi.minimap",
+      "name": "Amap / Gaode",
+      "category": "china",
+      "icon": "amap"
+    },
+    {
+      "package": "com.netease.cloudmusic",
+      "name": "NetEase Music",
+      "category": "china",
+      "icon": "netease_music"
+    },
+    {
+      "package": "com.tencent.qqmusic",
+      "name": "QQ Music",
+      "category": "china",
+      "icon": "qq_music"
+    },
+    {
+      "package": "ctrip.android.view",
+      "name": "Trip.com / Ctrip",
+      "category": "china",
+      "icon": "tripcom"
+    },
+    {
+      "package": "com.xunmeng.pinduoduo",
+      "name": "Pinduoduo",
+      "category": "china",
+      "icon": "pinduoduo"
+    },
+    {
+      "package": "com.ss.android.lark",
+      "name": "Feishu / Lark",
+      "category": "china",
+      "icon": "feishu"
+    },
+    {
+      "package": "com.alibaba.android.rimet",
+      "name": "DingTalk",
+      "category": "china",
+      "icon": "dingtalk"
+    },
+    {
+      "package": "com.deepseek.chat",
+      "name": "DeepSeek",
+      "category": "china",
+      "icon": "deepseek"
+    },
+    {
+      "package": "com.ios27dark.widgets",
+      "name": "iOS 27 Widgets",
+      "category": "international_de",
+      "icon": "ios27_widgets"
+    }
+  ]
+}

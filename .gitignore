@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Generated icon intermediate outputs (keep output/ or rebuild cleanly? Let's check: user wants output/iOS27_Dark_MagicOS.hnt and output/*.apk in repo or generated! Let's check user prompt!)
+# Wait: user prompt says: "pushe das fertige Ergebnis am Ende in ein neues GitHub-Repository" and "gib mir am Ende den Link zum Repo sowie den genauen Speicherort der .hnt- und .apk-Dateien aus."
+# So we SHOULD keep output/*.hnt, output/*.hwt, output/*.apk tracked (or NOT ignored), while ignoring Gradle build caches and intermediate icon PNG folders if huge—actually 120 icons at 192px & 432px are tiny (~5-10 MB total), or we only ignore Gradle build dirs and .idea/.gradle!
+icons_generator/build/
+
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+*.keystore
+*.jks
+captures/
+.cxx/
+
+# Logs
+*.log

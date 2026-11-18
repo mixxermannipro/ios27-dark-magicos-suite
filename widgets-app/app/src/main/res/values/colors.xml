@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ios_bg_screen">#09090B</color>
+    <color name="ios_widget_surface">#EB161618</color>
+    <color name="ios_widget_border">#2C2C2E</color>
+    <color name="ios_text_primary">#FFFFFF</color>
+    <color name="ios_text_secondary">#AEAEB2</color>
+    <color name="ios_text_tertiary">#8E8E93</color>
+    <color name="ios_red">#FF3B30</color>
+    <color name="ios_blue">#0A84FF</color>
+    <color name="ios_green">#30D158</color>
+    <color name="ios_orange">#FF9F0A</color>
+    <color name="ios_yellow">#FFD60A</color>
+</resources>

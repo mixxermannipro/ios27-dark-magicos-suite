@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Dark iOS clock dial face -->
+    <path
+        android:fillColor="#1C1C1E"
+        android:strokeColor="#2C2C2E"
+        android:strokeWidth="1.5"
+        android:pathData="M50,2 A48,48 0 1,1 49.99,2 Z" />
+
+    <!-- Cardinal hour ticks (12, 3, 6, 9) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:pathData="M50,7 L50,14 M93,50 L86,50 M50,93 L50,86 M7,50 L14,50" />
+
+    <!-- Remaining hour ticks (1, 2, 4, 5, 7, 8, 10, 11) -->
+    <path
+        android:strokeColor="#8E8E93"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M71.5,12.8 L68.5,18 M87.2,28.5 L82,31.5 M87.2,71.5 L82,68.5 M71.5,87.2 L68.5,82 M28.5,87.2 L31.5,82 M12.8,71.5 L18,68.5 M12.8,28.5 L18,31.5 M28.5,12.8 L31.5,18" />
+</vector>

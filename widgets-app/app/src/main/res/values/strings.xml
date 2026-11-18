@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iOS 27 Widgets</string>
+    <string name="media_listener_label">iOS 27 Now Playing Zugriff</string>
+
+    <string name="widget_clock_analog">iOS 27 Uhr (Analog 2×2)</string>
+    <string name="widget_clock_digital">iOS 27 Uhr (Digital 2×2)</string>
+    <string name="widget_world_clock">iOS 27 Weltuhr (4×2)</string>
+    <string name="widget_weather_small">iOS 27 Wetter (Klein 2×2)</string>
+    <string name="widget_weather_medium">iOS 27 Wetter (Mittel 4×2)</string>
+    <string name="widget_calendar_small">iOS 27 Kalender (Klein 2×2)</string>
+    <string name="widget_calendar_medium">iOS 27 Kalender (Mittel 4×2)</string>
+    <string name="widget_battery_small">iOS 27 Batterie (Klein 2×2)</string>
+    <string name="widget_battery_medium">iOS 27 Batterie (Mittel 4×2)</string>
+    <string name="widget_stocks_small">iOS 27 Aktien (Klein 2×2)</string>
+    <string name="widget_stocks_medium">iOS 27 Aktien (Mittel 4×2)</string>
+    <string name="widget_music">iOS 27 Musik / Now Playing (4×2)</string>
+    <string name="widget_reminders_small">iOS 27 Erinnerungen (Klein 2×2)</string>
+    <string name="widget_reminders_medium">iOS 27 Erinnerungen (Mittel 4×2)</string>
+    <string name="widget_photos_small">iOS 27 Fotos (Klein 2×2)</string>
+    <string name="widget_photos_large">iOS 27 Fotos (Groß 4×4)</string>
+</resources>

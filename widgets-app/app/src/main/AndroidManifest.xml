@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_ios27"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_ios27"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ios27Widgets"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Notification Listener for Now Playing / MediaSessionManager -->
+        <service
+            android:name=".data.MediaNotificationListener"
+            android:exported="true"
+            android:label="@string/media_listener_label"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- Boot & Power/Bluetooth Receiver -->
+        <receiver
+            android:name=".data.SystemEventReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.bluetooth.device.action.BATTERY_LEVEL_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 1. Clock Analog (2x2) -->
+        <receiver
+            android:name=".widgets.ClockAnalogWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_clock_analog">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_clock_analog" />
+        </receiver>
+
+        <!-- 2. Clock Digital (2x2) -->
+        <receiver
+            android:name=".widgets.ClockDigitalWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_clock_digital">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_clock_digital" />
+        </receiver>
+
+        <!-- 3. World Clock (4x2) -->
+        <receiver
+            android:name=".widgets.WorldClockWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_world_clock">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_world_clock" />
+        </receiver>
+
+        <!-- 4. Weather Small (2x2) -->
+        <receiver
+            android:name=".widgets.WeatherSmallWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_weather_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_REFRESH_WEATHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_weather_small" />
+        </receiver>
+
+        <!-- 5. Weather Medium (4x2) -->
+        <receiver
+            android:name=".widgets.WeatherMediumWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_weather_medium">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_REFRESH_WEATHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_weather_medium" />
+        </receiver>
+
+        <!-- 6. Calendar Small (2x2) -->
+        <receiver
+            android:name=".widgets.CalendarSmallWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_calendar_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_calendar_small" />
+        </receiver>
+
+        <!-- 7. Calendar Medium (4x2) -->
+        <receiver
+            android:name=".widgets.CalendarMediumWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_calendar_medium">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_calendar_medium" />
+        </receiver>
+
+        <!-- 8. Battery Small (2x2) -->
+        <receiver
+            android:name=".widgets.BatterySmallWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_battery_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_battery_small" />
+        </receiver>
+
+        <!-- 9. Battery Medium (4x2) -->
+        <receiver
+            android:name=".widgets.BatteryMediumWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_battery_medium">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_battery_medium" />
+        </receiver>
+
+        <!-- 10. Stocks Small (2x2) -->
+        <receiver
+            android:name=".widgets.StocksSmallWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_stocks_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_REFRESH_STOCKS" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_stocks_small" />
+        </receiver>
+
+        <!-- 11. Stocks Medium (4x2) -->
+        <receiver
+            android:name=".widgets.StocksMediumWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_stocks_medium">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_REFRESH_STOCKS" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_stocks_medium" />
+        </receiver>
+
+        <!-- 12. Music / Now Playing (4x2) -->
+        <receiver
+            android:name=".widgets.MusicWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_music">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_MEDIA_PREV" />
+                <action android:name="com.ios27dark.widgets.ACTION_MEDIA_PLAY_PAUSE" />
+                <action android:name="com.ios27dark.widgets.ACTION_MEDIA_NEXT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_music" />
+        </receiver>
+
+        <!-- 13. Reminders Small (2x2) -->
+        <receiver
+            android:name=".widgets.RemindersSmallWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_reminders_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_TOGGLE_REMINDER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_reminders_small" />
+        </receiver>
+
+        <!-- 14. Reminders Medium (4x2) -->
+        <receiver
+            android:name=".widgets.RemindersMediumWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_reminders_medium">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_TOGGLE_REMINDER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_reminders_medium" />
+        </receiver>
+
+        <!-- 15. Photos Small (2x2) -->
+        <receiver
+            android:name=".widgets.PhotosSmallWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_photos_small">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_NEXT_PHOTO" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_photos_small" />
+        </receiver>
+
+        <!-- 16. Photos Large (4x4) -->
+        <receiver
+            android:name=".widgets.PhotosLargeWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_photos_large">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ios27dark.widgets.ACTION_NEXT_PHOTO" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_photos_large" />
+        </receiver>
+
+    </application>
+</manifest>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ios_widget"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <!-- Top row: City + Temp left, Icon + Condition + H/T right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weather_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:text="München"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weather_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:fontFeatureSettings="tnum"
+                android:text="12°"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="Wetter" />
+
+            <TextView
+                android:id="@+id/weather_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heiter"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weather_hl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFeatureSettings="tnum"
+                android:text="H:15° T:6°"
+                android:textColor="#AEAEB2"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 5-Hour Forecast Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:id="@+id/wh_time_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="17h" android:textColor="#AEAEB2" android:textSize="11sp" />
+            <ImageView android:id="@+id/wh_icon_1" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginVertical="3dp" />
+            <TextView android:id="@+id/wh_temp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12°" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:id="@+id/wh_time_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18h" android:textColor="#AEAEB2" android:textSize="11sp" />
+            <ImageView android:id="@+id/wh_icon_2" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginVertical="3dp" />
+            <TextView android:id="@+id/wh_temp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11°" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:id="@+id/wh_time_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19h" android:textColor="#AEAEB2" android:textSize="11sp" />
+            <ImageView android:id="@+id/wh_icon_3" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginVertical="3dp" />
+            <TextView android:id="@+id/wh_temp_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10°" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:id="@+id/wh_time_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20h" android:textColor="#AEAEB2" android:textSize="11sp" />
+            <ImageView android:id="@+id/wh_icon_4" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginVertical="3dp" />
+            <TextView android:id="@+id/wh_temp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9°" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView android:id="@+id/wh_time_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21h" android:textColor="#AEAEB2" android:textSize="11sp" />
+            <ImageView android:id="@+id/wh_icon_5" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginVertical="3dp" />
+            <TextView android:id="@+id/wh_temp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8°" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

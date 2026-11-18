@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Apple red second hand with counterbalance tail -->
+    <path
+        android:strokeColor="#FF3B30"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:pathData="M50,60 L50,9" />
+    <path
+        android:fillColor="#FF3B30"
+        android:pathData="M50,47.5 A2.5,2.5 0 1,1 49.99,47.5 Z" />
+    <path
+        android:fillColor="#1C1C1E"
+        android:pathData="M50,49 A1,1 0 1,1 49.99,49 Z" />
+</vector>
