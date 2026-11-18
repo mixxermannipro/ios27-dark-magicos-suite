@@ -47,13 +47,13 @@ jobs:
         working-directory: widgets-app
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug assembleRelease
 
       - name: Build iOS 27 Dark IconPack APK
         working-directory: iconpack-apk
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug assembleRelease
 
       - name: Collect output artifacts
         run: |
@@ -71,3 +71,13 @@ jobs:
             output/iOS27_Dark_MagicOS.hwt
             output/iOS27_Widgets.apk
             output/iOS27_Dark_IconPack.apk
+
+      - name: Upload APKs for release signing
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios27-unsigned-release-apks
+          if-no-files-found: error
+          path: |
+            widgets-app/app/build/outputs/apk/release/app-release-unsigned.apk
+            iconpack-apk/app/build/outputs/apk/release/app-release-unsigned.apk
