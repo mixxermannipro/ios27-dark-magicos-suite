@@ -90,3 +90,10 @@ cp widgets-app/app/build/outputs/apk/debug/app-debug.apk output/iOS27_Widgets.ap
 cd iconpack-apk && ./gradlew assembleDebug && cd ..
 cp iconpack-apk/app/build/outputs/apk/debug/app-debug.apk output/iOS27_Dark_IconPack.apk
 ```
+
+---
+
+## Lizenz
+
+Dieses Projekt steht unter der **MIT-Lizenz** (siehe [LICENSE](LICENSE)).
+Alle Quellcodes, Icons, Masken und Widget-Grafiken wurden programmatisch erstellt und können frei genutzt, verändert und weitergegeben werden. Erwähnte App- und Markennamen gehören ihren jeweiligen Rechteinhabern.
